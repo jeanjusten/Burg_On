@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger-O Burger Perfeito</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Lib/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <script src="./script.js"></script> 
+</head>
+<body>
+    <!--PAGE LOADER-->
+    <div class="loader"></div>
+
+    <!--NAVBAR ACTIVE LINK SPY-->
+    <header id="header-nav">
+        <div class="navbar navbar-dark navbar-expand-lg">
+            <div class="container pt-1">
+                <img src="/images/Burger/burg_logo.webp" id="brand-logo" draggable="false" class="pb-1">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-dropdown">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu-dropdown">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#menu" class="nav-link">Cardápio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#social-media" class="nav-link">Siga-nos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Pedidos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <div data-bs-spy="scroll" data-bs-target="#header-nav">
+        <!--HERO SECTION PARALLAX-->
+        <main id="home">
+            <div class="banner" id="parallax">
+                <div class="text-hero-wrapper">
+                    <div class="container container-parallax">
+                        <div class="bg bg-0"></div>
+                        <div class="bg bg-1"></div>
+                        <div class="bg bg-2"></div>
+                        <div class="bg bg-3"></div>
+                        <div class="bg bg-4"></div>
+                        <div class="bg bg-5"></div>
+                        <div class="bg bg-6"></div>
+                        <h1 class="motto">BURG ON!</h1>
+                        <div class="bg bg-7"></div>
+                        <div class="bg bg-8"></div>
+                        <div class="bg bg-9"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+        <!--ABOUT SECTION-->
+        <section id="about">
+            <div class="container container-about d-flex justify-content-center mt-5">
+                <h2 class="text text-center">Sobre nós</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, itaque.</p>
+            </div>
+        </section>
+
+    </div>
+    <script src="./app.js"></script>
+    <script src="./Lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
