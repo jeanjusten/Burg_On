@@ -86,7 +86,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: #1f1f1f !important;
+    background: var(--colorScrollBg) !important;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -113,7 +113,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: transparent;
+    background-color: var(--colorHeader);
 }
 
 .navbar {
@@ -126,7 +126,7 @@ header {
 }
 
 .nav-item a {
-    color: #ffffff;
+    color: var(--colorTextPrimary);
     font-family: "Lexend", sans-serif;
     font-weight: 300;
 }
@@ -134,11 +134,13 @@ header {
 .nav-link.active {
     font-weight: bold;
     background-color: transparent !important;
-    color: #de0001 !important;
+    border-bottom: 5px solid var(--colorPrimary);
+    border-radius: 0px;
+    padding-bottom: 0px;
 }
 
 .nav-link:hover {
-    color: #a50101 !important;
+    color: var(--colorButtonHover) !important;
 }
 
 .nav-link {
@@ -286,32 +288,7 @@ header {
 /*----------------------------*/
 /*ABOUT SECTION*/
 /*----------------------------*/
-.intro {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--colorBody);
-}
-
-.intro img {
-    height: 40px;
-}
-
-.intro p {
-    color: var(--colorTextPrimary);
-    width: 700px;
-    max-width: 100%;
-    text-align: center;
-}
-
-.intro h2 {
-    color: var(--colorTextPrimary);
-}
-
-.intro button {
+.about-container button {
     background-color: var(--colorPrimary);
     padding: 10px 50px;
     border: none;
@@ -323,9 +300,33 @@ header {
     transition: 0.5s ease-in-out;
 }
 
-.intro button:hover {
+.about-container button:hover {
     background-color: var(--colorButtonHover);
     transition: 0.5s ease-in-out;
 }
 
+.container-about h2,
+.container-about p {
+    color: var(--colorTextPrimary);
+}
 
+/*----------------------------*/
+/*ICONS SECTION*/
+/*----------------------------*/
+#menu {
+    background-color: white;
+    min-height: 300px;
+}
+
+.container-icons {
+    gap: 20px;
+}
+
+.icon-container {
+    max-width: 40%;
+}
+
+.icon-container img {
+    height: 300px;
+    max-width: 100%;
+}
