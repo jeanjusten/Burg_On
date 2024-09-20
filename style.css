@@ -130,10 +130,10 @@ header {
     font-family: "Lexend", sans-serif;
     font-weight: 300;
     border-bottom: 1px;
+    font-weight: bold;
 }
 
 .nav-link.active {
-    font-weight: bold;
     background-color: transparent !important;
     border-bottom: 5px solid var(--colorPrimary);
     border-radius: 0px;
@@ -164,7 +164,6 @@ header {
 /*Navbar Dropdown menu breakpoint to mobile*/
 @media (max-width: 991px) {    
     .nav-link.active {
-        font-weight: bold;
         color: var(--colorPrimary) !important;
         border-bottom: none;
     }
