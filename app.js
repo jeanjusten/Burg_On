@@ -13,5 +13,5 @@ window.addEventListener("scroll", (event) => {
             bg.style.transform = `translateY(${top/3}px)`;
         }
     })
-    titleBanner.style.transform = `translateY(${top*2.8/2}px)`;
+    titleBanner.style.transform = `translateY(${top*3/2}px)`;
 });
